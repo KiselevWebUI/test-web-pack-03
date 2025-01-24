@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="<%= htmlWebpackPlugin.options.metaDesc %>" />
+</head>
+<body>
+  <div id="dialog">
+    <dialog open>
+        <div class="popup">
+            <a class="popup_cross"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg></a>
+            <div class="popup_title">Popup title</div>
+            <div class="popup_content">
+              <form name="form" method="post" action="/user">
+                  <div></div><div id="form-title-error"></div>
+                  <label for="name">Имя*:</label>
+                  <div>
+                    <input name="name" id="name" class="form-input" mandatory="1"/>
+                    <div id="name-alert"></div>
+                  </div>
+                  <label for="email">E-mail*:</label>
+                  <div>
+                    <input name="email" id="email" class="form-input" mandatory="1" validation="email"/>
+                    <div id="email-alert"></div>
+                  </div>
+                  <label for="phone-input">Телефон*:</label>
+                  <div>
+                    <input name="phone" id="phone" class="form-input" mandatory="1"/>
+                    <div id="phone-alert"></div>
+                  </div>
+                  <label for="msg">Сообщение*:</label>
+                  <div>
+                    <textarea name="msg" id="msg" class="form-input" rows="5" mandatory="1"></textarea>
+                    <div id="msg-alert"></div>
+                  </div>
+                  <div></div>
+                  <button type="submit" class="button_white send_request">отправить</button>
+              </form>
+            </div>
+        </div>
+    </dialog>
+  </div>
+ <div class="wrapper">
+    <div class="header">
+      <div class="section">
+        <h1><%= htmlWebpackPlugin.options.header %></h1>
+        <button class="popupBtn">popup</button>
+      </div>
+    </div>
+    <div class="content">
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          <button class="popupBtn">popup</button>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          <button class="popupBtn">popup</button>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+        <div class="section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corporis ducimus voluptatibus modi? Blanditiis dolor corrupti aperiam ullam nulla eum, maxime facere exercitationem id nesciunt reiciendis? Sapiente sed pariatur tenetur ab magnam? Pariatur temporibus ea porro inventore doloremque sequi, placeat ducimus, non obcaecati esse harum accusamus quas incidunt? Quod nisi aut quas, dolores eligendi repellendus dolor, earum voluptates eos adipisci id quos sapiente qui fugit nobis commodi possimus. Ipsam quaerat iusto consectetur similique, cum laborum id harum quae quasi maxime amet nesciunt, obcaecati officia, fugiat illo exercitationem nostrum. Quos in ratione, cum numquam architecto distinctio commodi eveniet et! Animi, eveniet.
+        </div>
+
+    </div>
+    <div class="footer">
+      <div class="section">
+        <button class="popupBtn">popup</button>
+      </div>
+    </div>
+</div>
+</body>
+</html>

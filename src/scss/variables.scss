@@ -1,0 +1,47 @@
+$body-color: #000;
+
+$vh100: 100%;
+$vw100: 100%;
+
+$base-font-family: "Verdana, Geneva, Tahoma, sans-serif";
+
+$base-margin: 10px;
+$base-padding: 10px;
+$base-font-size: 16px;
+$title-font-size: 30px;
+$base-line-heigth: 1.2em;
+$title-line-heigth: 2em;
+$base-font-weight: 400;
+$header-background-color: #c2c2c2;
+$base-background-color: #eff1f4;
+$footer-background-color: #c2c2c2;
+$base-color: #000;
+$alert-color: red;
+
+$popup-shild-0-background-color: rgba(0, 0, 0, 0.0);
+$popup-shild-full-background-color: rgba(0, 0, 0, 0.3);
+
+$form-input-border-color: #ccc;
+$form-input-border-radius: 3px;
+
+$dialog-width: 520px;
+$dialog-border: 2px solid $form-input-border-color;
+$dialog-background-color: $base-background-color;
+$grid-template-columns: 150px auto;
+
+
+
+/* button */
+$button-font-family: $base-font-family;
+$button-font-size: 15px;
+$button-line-height: 1.5em;
+$button-color: #fff;
+$button-color-dark: #2A2B30;
+$button-width: 150px;
+$button-border-radius: 4px;
+$button-border: 1px solid #fff;
+$button-border-dark: 1px solid #6F6D7B;
+$button-border-blue: 2px solid #3E9CDC;
+$button-background-white: #fff;
+$button-background-blue: #3E9CDC;
+/* button end */
